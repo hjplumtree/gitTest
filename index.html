@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmarket Copy</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+
+    <script>
+      $(function() {
+        setInterval(function(){
+          $("#slider ul").animate({marginLeft:"-=100%"}
+          ,function() {
+            $("#slider ul").css({marginLeft: 0});
+            $("#slider ul li").first().appendTo("#slider ul");
+
+          });
+
+        }, 3000)
+      }); 
+
+    </script>
+
+
+
+
+
+  </head>
+  <body>
+    <div class="container" id="whole">
+      <div id="header">
+        <img src="img/logo.png">
+        <div id="menu">
+          <ul>
+            <li>베스트</li>
+            <li>슈퍼딜</li>
+            <li>쿠폰/출첵</li>
+            <li>스마일배송</li>
+            <li>스마일클럽</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="slider">
+        <ul>
+          <li><a><img src="img/main_banner01.jpg"></a></li>
+          <li><a><img src="img/main_banner02.jpg"></a></li>
+          <li><a><img src="img/main_banner03.jpg"></a></li>
+        </ul>
+      </div>
+
+      <div id="popularContainer">
+        <div id="popularTitle">
+          <h3>지금 제일 잘나가는 상품</h3>
+          <p>전체보기-></p>
+        </div>
+        <div id="popularItems">
+
+          <div class="popularItemEach">
+            <img src="img/product01.jpg">
+            <p>[천하장사] 천하장사 오리지널 1500g(15x100개)/더블링/맥스봉</p>
+            <p><span class="price">11,900</span>원</p>
+          </div>
+
+          <div class="popularItemEach">
+            <img src="img/product02.jpg">
+            <p>국내생산 FDA 승인 귀가 편한 3중필터 마스트 50매</p>
+            <p><span class="price">19,880</span>원</p>
+          </div>
+
+          <div class="popularItemEach">
+            <img src="img/product03.jpg">
+            <p>[메디플라워]100%순면 엠보싱 대용량 고급화장솜 300매x3(총900매)</p>
+            <p><span class="price">8,900</span>원</p>
+          </div>
+
+          <div class="popularItemEach">
+            <img src="img/product04.jpg">
+            <p>(8/6) 7/10~7/19 예약판매 D-icon 디아이콘 vol.08 아이즈원 IZONE</p>
+            <p><span class="price">26,700</span>원</p>
+          </div>
+
+          <div class="popularItemEach">
+            <img src="img/product05.jpg">
+            <p>[뉴트리디데이]프리미엄 저분자 피쉬 콜라겐 타블렛 2병 (총 6개월)</p>
+            <p><span class="price">12,900</span>원</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="shopContainer">
+        <div>
+          <div class="shop">
+            <h3>G마켓에서 장보기</h3>
+            <p>바로가기-></p>
+          </div>
+            <div>
+              <img src="img/mini_banner.jpg">
+            </div>
+        </div>
+        
+        <div>
+            <div class="shop">
+            <h3>스마일배송</h3>
+            <p>바로가기-></p>
+            </div>
+            <div>
+              <img src="img/mini_banner01.jpg">
+            </div>
+        </div>
+        
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+  </body>
+</html>

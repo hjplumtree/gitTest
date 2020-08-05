@@ -1,0 +1,99 @@
+		* { margin:0; padding:0; box-sizing: border-box; font-size: 14px}
+		html, body { width:100%; height: 100%; } 
+		a { text-decoration:none; color : black;} 
+		ul li, ol li { list-style: none; } 
+		h3 {
+			font-size: 2rem;
+		}
+		#whole {
+			width: 85vw;
+			margin: 0 auto;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.container #header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		img{
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+		.container #header img{
+			
+			width: 12%;
+		}
+		.container #header menu {
+			display:flex;
+
+		}
+		.container #header ul{
+			display: flex;
+			justify-content: space-evenly;
+			width: 50vw;
+		}
+
+
+		#popularContainer {
+			margin: 20px 0;
+			display: flex;
+			flex-direction: column;
+		}
+		#popularContainer #popularTitle {
+			display: flex;
+			justify-content: space-between;
+		}
+		#popularContainer #popularItems {
+			display: flex;
+			justify-content: space-evenly;
+
+		}
+		#popularContainer .popularItemEach {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.popularItemEach {
+			font-size: 1rem;
+		}
+		.price {
+			font-size: 1.5em;
+		}
+
+		.shopContainer {
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0 ;
+		}
+		.shopContainer .shop {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+
+
+
+
+
+
+
+
+		#slider ul {
+			width: 300%; 	height: 400px;
+		
+			display: flex;
+		}
+		#slider {
+			width:970px;
+			overflow: hidden;
+			margin: 0 auto;
+			height: 400px;
+
+		}
