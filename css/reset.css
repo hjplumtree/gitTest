@@ -1,12 +1,29 @@
-		* { margin:0; padding:0; box-sizing: border-box; font-size: 14px}
-		html, body { width:100%; height: 100%; } 
+@font-face {
+	font-family: gmarke;
+	src : url(GmarketSansTTFBold.ttf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: gmarket;
+	src : url(GmarketSansTTFMedium.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: gmarket;
+	src : url(GmarketSansTTFLight.ttf);
+	font-weight: 300;
+}
+
+* { margin:0; padding:0; box-sizing: border-box; font-size: 13px}
+
+		html, body { width:100%; height: 100%; font-family: gmarket; font-weight: 400 } 
 		a { text-decoration:none; color : black;} 
 		ul li, ol li { list-style: none; } 
 		h3 {
 			font-size: 2rem;
 		}
 		#whole {
-			width: 85vw;
+			width: 77vw;
 			margin: 0 auto;
 		}
 		.container {
@@ -25,12 +42,10 @@
 			object-fit: contain;
 		}
 		.container #header img{
-			
 			width: 12%;
 		}
-		.container #header menu {
+		.container #header #menu {
 			display:flex;
-
 		}
 		.container #header ul{
 			display: flex;
@@ -38,6 +53,10 @@
 			width: 50vw;
 		}
 
+		#menu ul li {
+			font-size: 1.1rem;
+		}
+		
 
 		#popularContainer {
 			margin: 20px 0;
@@ -61,9 +80,10 @@
 
 		.popularItemEach {
 			font-size: 1rem;
+			padding: 0 10px;
 		}
 		.price {
-			font-size: 1.5em;
+			font-size: 1.5rem;
 		}
 
 		.shopContainer {
@@ -77,17 +97,13 @@
 			justify-content: space-between;
 		}
 
-
-
-
-
-
-
+		.shopImage img{
+			border-radius: 1rem;
+		}
 
 
 		#slider ul {
 			width: 300%; 	height: 400px;
-		
 			display: flex;
 		}
 		#slider {
@@ -95,5 +111,4 @@
 			overflow: hidden;
 			margin: 0 auto;
 			height: 400px;
-
 		}
